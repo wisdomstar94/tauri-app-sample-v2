@@ -14,6 +14,8 @@ export function RootLayoutClient(props: { children: ReactNode }) {
   const [menus, _] = useState<Menu[]>([
     { name: '/', href: '/' },
     { name: '/test/invoke-handler', href: '/test/invoke-handler' },
+    { name: '/test/event-send-to-rust', href: '/test/event-send-to-rust' },
+    { name: '/test/event-receive-from-rust', href: '/test/event-receive-from-rust' },
   ]);
   const [activeMenuHref, setActiveMenuHref] = useState<string>();
 
